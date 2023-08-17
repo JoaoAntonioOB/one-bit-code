@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro liga dos austronaltas</title>
+</head>
+<body>
+    <form action="#">
+        <h3>Cadastro da liga dos austronaltas</h3>
+        Nome: <input type="text" id="na" name="name" required autocomplete="on">
+        <br>
+        <br>
+        Email: <input type="email" name="email" id="em" required autocomplete="on">
+        <strong>- Password</strong><input type="password" name="password" id="pass" required>
+        <br>
+        <br>
+        <input type="date" name="date" id="dt" required>
+        <strong>- Foto</strong><input type="file" name="file" id="file">
+        <br> <br>
+        <label for="nacionality"><strong>Nacionalidade</strong></label>
+        <select name="nacionality" id="nacionality">
+            <option value="nacionalidade">Russo</option>
+            <option value="nacionalidade">Brasileiro</option>    
+            <option value="nacionalidade">Americano</option>
+        </select>
+        
+        <strong>- Genero:</strong> <input type="radio" name="genero" value="Female">F
+         </strong> <input type="radio" name="genero" value="Male">M
+
+        <br><br>
+         <p><strong>Qualidades:</strong></p>
+        <input type="checkbox" name="qualidades" value="Inteligência">Inteligência
+        <input type="checkbox" name="qualidades" value="Resiliência">Resiliência
+        <input type="checkbox" name="qualidades" value="Preparo">Preparo físico
+        <input type="checkbox" name="Educação" value="Educação">Educação
+         <br><br>
+        <input type="text" name="motivo" required placeholder="Porque você gostaria de ser um astronauta?" size="100">
+         <br><br>
+        <input type="submit" value="Criar">
+    </form>
+</body>
+</html>
