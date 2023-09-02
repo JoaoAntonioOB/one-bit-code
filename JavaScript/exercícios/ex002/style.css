@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    background-color: rgba(130, 36, 147, 0.591);
+    width: 70vw;
+
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.632);
+}
+
+section > form {
+    text-indent: 30px;
+    padding: 10px;
+}
+
+section > form > p {
+    padding: 10px;
+}
+
+section > form > p > input {
+    border: 1px solid black;
+    height: 20px;
+}
+
+input[type="submit"] {
+    width: 80px;
+    height: 40px;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.356);
+    border-radius: 5px;
+    border: none;
+}
+
+div#output {
+    padding: 20px;
+}
