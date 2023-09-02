@@ -6,6 +6,8 @@
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     background-color: aqua;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,7 +19,7 @@ header {
 
 section {
     background-color: rgba(130, 36, 147, 0.591);
-    width: 70vw;
+    width:450px ;
 
     margin: auto;
     border-radius: 20px;
