@@ -1,31 +1,40 @@
 let n1 = window.document.getElementById("n1");
-n1 = parseFloat(n1);
 let n2 = window.document.getElementById("n2");
-n2 = parseFloat(n2);
 let output = window.document.getElementById("output");
-let operacoes = window.document.getElementById("operacoes")
-let res = parseFloat("null")
+//let operacoes = window.document.getElementById("operacoes")
 
-function escrever() {
-    res = calcular();
-    output.innerHTML = res
-}
 
-function calcular(operacoes){
-    switch {
+function calcular(simbolo){
+    let num1 = parseFloat(n1.value);
+    let num2 = parseFloat(n2.value);
+    //let simbolo = operacoes.value
+
+    if(isNaN(num1) || isNaN(num2)){
+        output.innerHTML = "Por favor, insira números válidos";
+    } else {
+        let res;
+    switch (simbolo) {
         case "+":
-            res = n1 + n2
+            res = num1 + num2
             break
         case "-":
-            res = n1 - n2
+            res = num1 - num2
             break
         case "*":
-            res = n1 * n2
+            res = num1 * num2
             break
         case "/":
-            res = n1 / n2
+            if(n2 == 0){
+                output.innerHTML = "Divisão por zero não é permitida"
+            }
+            res = num1 / num2
+            break
+            default:
+                output.innerHTML = "Operação invalida"
+                return
+        }
+    output.innerHTML = `Resultado: ${res}`
     }
-    return res
 }
 
 
