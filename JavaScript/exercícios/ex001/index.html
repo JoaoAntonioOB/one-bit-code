@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Recutas</title>
+</head>
+<body>
+    <header><h1>Cadastro de recrutas</h1></header>
+    <section>
+        <form action="script.js" autocomplete="on">
+            <p>
+                <label for="firstName">Primero nome: </label>
+                <input type="text" name="firstName" id="firstName" required autocomplete="nickname">
+            </p>
+            <p>
+                <label for="lastName">Sobrenome: </label>
+                <input type="text" name="lastName" id="lastName" required autocomplete="family-name">
+            </p>
+            <p>
+                <label for="study">Campo de Estudo: </label>
+                <input type="text" name="study" id="study">
+            </p>
+            <p>
+                <label for="birth">Data de Nascimento: </label>
+                <input type="date" name="birth" id="birth">
+            </p>
+                <input type="submit" value="Enviar">
+        </form>
+        <div id="output">
+            
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
