@@ -18,7 +18,6 @@ header {
 section {
     background-color: rgba(130, 36, 147, 0.591);
     width: 70vw;
-
     margin: auto;
     border-radius: 20px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.632);
@@ -38,7 +37,7 @@ section > form > p > input {
     height: 20px;
 }
 
-input[type="submit"] {
+input[type="button"]#enviarNumeros {
     width: 80px;
     height: 40px;
     display: block;
@@ -47,6 +46,17 @@ input[type="submit"] {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.356);
     border-radius: 5px;
     border: none;
+}
+
+input[type="button"].operacoes {
+    width: 80px;
+    height: 40px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.356);
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5em;
 }
 
 div#output {

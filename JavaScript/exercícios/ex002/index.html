@@ -7,27 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><h1>Cadastro de recrutas</h1></header>
+    <header><h1>Calculadora de 4 Operações5</h1></header>
     <section>
         <form action="#" autocomplete="on" id="form">
             <p>
-                <label for="firstName">Primero nome: </label>
-                <input type="text" name="firstName" id="firstName" required autocomplete="nickname" size="15px">
+                <label for="n1">Primeiro Número: </label>
+                <input type="number" name="n1" id="n1" required size="15px">
             </p>
             <p>
-                <label for="lastName">Sobrenome: </label>
-                <input type="text" name="lastName" id="lastName" required autocomplete="family-name" size="15px">
+                <label for="n2">Segundo Número: </label>
+                <input type="number" name="n2" id="n2" required size="15px">
             </p>
             <p>
-                <label for="study">Campo de Estudo: </label>
-                <input type="text" name="study" id="study"
-                size="15px">
+                <input type="button" value="+" id="soma" class="operacoes" onclick="calcular()">
+                <input type="button" value="-" id="sub" class="operacoes" onclick="calcular()">
+                <input type="button" value="*" id="mult" class="operacoes" onclick="calcular()">
+                <input type="button" value="/" id="divi" class="operacoes" onclick="calcular()">
             </p>
             <p>
-                <label for="birth">Data de Nascimento: </label>
-                <input type="date" name="birth" id="birth" required autocomplete="bday">
+                <input type="button" value="Calcular" id="enviarNumeros" >
             </p>
-                <input type="submit" value="Enviar" onclick="enviar()">
+
         </form>
         <div id="output">
             
