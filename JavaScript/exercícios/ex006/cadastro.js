@@ -4,7 +4,7 @@ let menu = null
 
 do{
     menu = prompt(
-        "Quantidade de Imovéis cadastrados\n" + cadastro.length + "\n1." + "Salvar novo imovél\n2." + "Mostrar Imovéis cadastrados\n3." + "Sair"
+        "Quantidade de Imovéis cadastrados:\n" + cadastro.length + "\n1." + "Salvar novo imovél\n2." + "Mostrar Imovéis cadastrados\n3." + "Sair"
     )
     switch(menu){
         case "1":
@@ -13,7 +13,19 @@ do{
             imovel.quantidadeQuartos = prompt("Qual a quantidade de quartos?")
             imovel.quantidadeBanheiros = prompt("Qual a quantidade de banheiros?")
             imovel.garagem = prompt("Possui garagem?")
-            cadastro.push(imovel)
+
+            let confirmacao = confirm(
+                "Salvar este imóvel?\n" + 
+                "\nProprietario: " + imovel.nomeProprietario + "\nQuartos: " + imovel.quantidadeQuartos + 
+                "\nBanheiros: " + imovel.quantidadeBanheiros + "\nPossui garagem: " + imovel.garagem
+            )
+                if(confirmacao) {
+                    cadastro.push(imovel)
+                    alert("Imovél salvo com sucesso")
+                } else {
+                    alert("Voltando ao menu")
+                }
+            
             break
         case "2":
             for(let cont = 0; cont < cadastro.length; cont++){
