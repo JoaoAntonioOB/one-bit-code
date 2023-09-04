@@ -26,7 +26,7 @@ function areaTrapezio(){
 
 function areaCirculo(){
     let raio = parseFloat(prompt("Digite o valor do raio do circulo: "))
-    return 3.14 * (raio * 2)
+    return 3.14 * (raio * raio)
 }
 
 
