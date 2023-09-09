@@ -23,6 +23,14 @@ addTechBtn.addEventListener('click', function(event){
     const newTech = document.getElementById('newTech')
 
     const newRow = document.createElement('li')
+    const rowIndex = newRow
+
+
+
+    const techName = createInput
+    const timeExperinence = document.createElement('radio')
     
+    newTech.appendChild(newRow)
+    newRow.appendChild(techName)
 
 })
